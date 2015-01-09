@@ -10,18 +10,31 @@
 			font-family: veranda;
 			text-align: center; 
 		}
-		img { 
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
-			margin-top: 2cm; 
+		#cf { 
+			position:relative;
+			margin:0 auto; 
 		}
+		#cf img {
+			position:absolute;
+			left:0;
+			-webkit-transition: opacity 1s ease-in-out;
+			-moz-transition: opacity 1s ease-in-out;
+			-o-transition: opacity 1s ease-in-out;
+			transition: 1s ease-in-out;
+		}
+		#cf img.top:hover {
+			opacity:0;
+		}
+		
 	</style>
 	
 	</head>
 	<body>
 
-	<img src="http://i1.walesonline.co.uk/incoming/article1785459.ece/alternates/s2197/a-slow-loris-504608477.jpg" alt="slow loris" style="width:500"/>
+	<div id="cf">
+		<img class="top" src="http://i1.walesonline.co.uk/incoming/article1785459.ece/alternates/s2197/a-slow-loris-504608477.jpg" alt="slow loris" style="width:500"/>
+		<img class="bottom" src="http://vignette2.wikia.nocookie.net/monster/images/d/d1/Rakee.jpg/revision/latest?cb=20140928220833" alt="the rake" style="width:500"/>
+	</div>
 
 	<p> </p>
 	<p> "In the eyes of the slow loris I see naught </p>
