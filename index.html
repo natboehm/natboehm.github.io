@@ -12,7 +12,7 @@
     			color: white;
 			font-family: veranda;
 			text-align: center;
-			margin-top:2cm;
+			margin-top: 1cm;
 			line-height: 1; 
 		}
 		img { 
@@ -28,28 +28,28 @@
 	
 	<body>
 
-	<img src = "http://i1.walesonline.co.uk/incoming/article1785459.ece/alternates/s2197/a-slow-loris-504608477.jpg" alt="slow loris" >
+		<img src= "http://i1.walesonline.co.uk/incoming/article1785459.ece/alternates/s2197/a-slow-loris-504608477.jpg" alt="slow loris" >
 	
-	<div id="cf">
-		var image = document.querySelector('img');
+		<script>
+			var image = document.querySelector('img');
 
-		image.onclick = function() {
-			var imageSrc = image.getAttribute('src');
+			image.onclick = function() {
+				var imageSrc = image.getAttribute('src');
 		
-			if(imageSrc == 'http://i1.walesonline.co.uk/incoming/article1785459.ece/alternates/s2197/a-slow-loris-504608477.jpg') {
-				image.setAttribute ('src','http://vignette2.wikia.nocookie.net/monster/images/d/d1/Rakee.jpg/revision/latest?cb=20140928220833');
-			} else {
-				image.setAttribute('src','http://i1.walesonline.co.uk/incoming/article1785459.ece/alternates/s2197/a-slow-loris-504608477.jpg');
-			}	
-		}
-	`</div>
+				if(imageSrc == 'http://i1.walesonline.co.uk/incoming/article1785459.ece/alternates/s2197/a-slow-loris-504608477.jpg') {
+					image.setAttribute ('src','http://vignette2.wikia.nocookie.net/monster/images/d/d1/Rakee.jpg/revision/latest?cb=20140928220833');
+				} else {
+					image.setAttribute('src','http://i1.walesonline.co.uk/incoming/article1785459.ece/alternates/s2197/a-slow-loris-504608477.jpg');
+				}	
+		}	
+	`	</script>
 
-	<div id="text">
-		<p> "In the eyes of the slow loris I see naught </p>
-		<p>  but despair, the futility of action, and </p>
-		<p>  the end of mankind." </p>
-		<p>  ~ Known </p>
-	</div>
+		<div id="text">
+			<p> "In the eyes of the slow loris I see naught </p>
+			<p>  but despair, the futility of action, and </p>
+			<p>  the end of mankind." </p>
+			<p>  ~ Known </p>
+		</div>
 
 	</body>
 </html>
