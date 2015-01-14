@@ -29,13 +29,12 @@
 	<div id="cf">
 		var image = document.querySelector('img');
 
-		image.onClick = function() {
+		image.onclick = function() {
 			var imageSrc = image.getAttribute('src');
 		
 			if(imageSrc == 'http://i1.walesonline.co.uk/incoming/article1785459.ece/alternates/s2197/a-slow-loris-504608477.jpg') {
 				image.setAttribute ('src','http://vignette2.wikia.nocookie.net/monster/images/d/d1/Rakee.jpg/revision/latest?cb=20140928220833');
-			}	
-			else {
+			} else {
 				image.setAttribute('src','http://i1.walesonline.co.uk/incoming/article1785459.ece/alternates/s2197/a-slow-loris-504608477.jpg');
 			}	
 		}
