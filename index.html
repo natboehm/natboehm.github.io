@@ -16,41 +16,30 @@
 			line-height: 1; 
 		}
 		#cf { 
-			position:relative;
-			height:281px;
-			width:500px;
-			margin:0 auto;
+			margin-left: auto;
+			margin-right: auto;
 			margin-top: 2cm; 
-		}
-		#cf img {
-			position:absolute;
-			left:0;
-			-webkit-transition: opacity 1s ease-in-out;
-			-moz-transition: opacity 1s ease-in-out;
-			-o-transition: opacity 1s ease-in-out;
-			transition: opacity 1s ease-in-out;
-		}
-		#cf img.top:hover {
-			opacity:0;
-		}
-		#cf img.top {
-			width: 500;
-			height: 325;
-		}
-		#cf img.bottom {
-			width: 500;
-			height: 325;
 		}
 		
 	</style>
 	</head>
 	
 	<body>
-
+	
 	<div id="cf">
-		<img class="bottom" src="http://vignette2.wikia.nocookie.net/monster/images/d/d1/Rakee.jpg/revision/latest?cb=20140928220833" alt="the rake"/>
-		<img class="top" src="http://i1.walesonline.co.uk/incoming/article1785459.ece/alternates/s2197/a-slow-loris-504608477.jpg" alt="slow loris"/>
-	</div>
+		var image = document.querySelector('img');
+
+		image.onClick = function() {
+			var imageSrc = image.getAttribute('src');
+		
+			if(imageSrc == 'http://i1.walesonline.co.uk/incoming/article1785459.ece/alternates/s2197/a-slow-loris-504608477.jpg') {
+				image.setAttribute ('src','http://vignette2.wikia.nocookie.net/monster/images/d/d1/Rakee.jpg/revision/latest?cb=20140928220833');
+			}	
+			else {
+				image.setAttribute('src','http://i1.walesonline.co.uk/incoming/article1785459.ece/alternates/s2197/a-slow-loris-504608477.jpg');
+			}	
+		}
+	`</div>
 
 	<div id="text">
 		<p> "In the eyes of the slow loris I see naught </p>
