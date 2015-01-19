@@ -1,29 +1,9 @@
 <html>
 	<head>
-	<title>My life as a bittie</title>
-	<style>
-		body {
-    			background-color: black;
-			border: 1px solid white;
-			padding: 20px 20px 20px 20px; 
-		}
-		#text {
-			display: block;
-    			color: white;
-			font-family: veranda;
-			text-align: center;
-			margin-top: 1cm;
-			line-height: 1; 
-		}
-		img { 
-			display: block;
-			margin: 0 auto; 
-			margin-top: 2cm; 
-			width: 500;
-			height: 325;  
-		}
-		
-	</style>
+		<title>My life as a bittie</title>
+	
+		<link rel="stylesheet" href="index.css">
+
 	</head>
 	
 	<body>
@@ -31,20 +11,7 @@
 		<img src= "http://i1.walesonline.co.uk/incoming/article1785459.ece/alternates/s2197/a-slow-loris-504608477.jpg" alt="slow loris"/>
 		<audio src="http://www.myinstants.com/media/sounds/01-the-screaming-sheep.mp3" id="goatScream" preload="auto"></audio> 
 
-		<script>				
-			var slowLorisImg = document.querySelector('img');
-
-			slowLorisImg.onclick = function() {
-				var imageSrc = slowLorisImg.getAttribute('src');				
-
-				if(imageSrc === 'http://i1.walesonline.co.uk/incoming/article1785459.ece/alternates/s2197/a-slow-loris-504608477.jpg') {
-					slowLorisImg.setAttribute ('src','http://img3.wikia.nocookie.net/__cb20141118173223/creepypastaitalia/it/images/7/7f/Rake-0.jpg');
-					document.getElementById('goatScream').play();
-				} else {
-					slowLorisImg.setAttribute ('src','http://i1.walesonline.co.uk/incoming/article1785459.ece/alternates/s2197/a-slow-loris-504608477.jpg');
-				}	
-			}	
-		</script>
+		<script src="index.js"></script>
 
 		<div id="text">
 			<p> "In the eyes of the slow loris I see naught </p>
