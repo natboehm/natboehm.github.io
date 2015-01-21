@@ -8,5 +8,6 @@ slowLorisImg.onclick = function() {
 		document.getElementById('goatScream').play();
 	} else {
 		slowLorisImg.setAttribute ('src','http://i1.walesonline.co.uk/incoming/article1785459.ece/alternates/s2197/a-slow-loris-504608477.jpg');
+		document.getElementById('goatScream').pause(); 
 	}
 }
