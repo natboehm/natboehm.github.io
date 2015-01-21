@@ -7,7 +7,7 @@ function playGoat() {
 }
 
 function stopGoat() {
-	goatScreamAud.stop();
+	goatScreamAud.pause;
 }
 
 slowLorisImg.onclick = function() {
