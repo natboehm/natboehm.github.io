@@ -1,7 +1,5 @@
 var slowLorisImg = document.querySelector('img');
-
 var goatScreamAud = document.getElementById('goatScream'); 
-
 var imageSrc = slowLorisImg.getAttribute('src');
 
 function playGoat() {
@@ -15,7 +13,7 @@ function stopGoat() {
 setTimeout("changeImage()", 8000);
 
 function changeImage() {
-	document.getElementById("slowLorisImg").src = 'http://img3.wikia.nocookie.net/__cb20141118173223/creepypastaitalia/it/images/7/7f/Rake-0.jpg';	
+	document.getElementById("slowImage").src = 'http://img3.wikia.nocookie.net/__cb20141118173223/creepypastaitalia/it/images/7/7f/Rake-0.jpg';	
 	playGoat();
 }
 
