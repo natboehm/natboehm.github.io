@@ -9,7 +9,7 @@ function stopGoat() {
 	goatScreamAud.pause();
 }
 
-setTimeout("changeImage()", 8000);
+setTimeout("changeImage()", 7000);
 
 function changeImage() {
 	slowLorisImg.setAttribute ('src','http://img3.wikia.nocookie.net/__cb20141118173223/creepypastaitalia/it/images/7/7f/Rake-0.jpg');
