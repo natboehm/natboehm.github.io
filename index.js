@@ -13,7 +13,7 @@ function stopGoat() {
 setTimeout("changeImage()", 8000);
 
 function changeImage() {
-	document.getElementById('imageSrc').src = "http://img3.wikia.nocookie.net/__cb20141118173223/creepypastaitalia/it/images/7/7f/Rake-0.jpg";
+	document.getElementById('slowImage').src = "http://img3.wikia.nocookie.net/__cb20141118173223/creepypastaitalia/it/images/7/7f/Rake-0.jpg";
 	playGoat();
 	slowLorisImg.onclick = slowLorisClicker();
 }
